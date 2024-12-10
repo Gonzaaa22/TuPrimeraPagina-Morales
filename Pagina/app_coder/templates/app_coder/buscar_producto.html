@@ -1,0 +1,20 @@
+{% extends 'app_coder/base.html' %}
+
+{% block content %}
+    <h2>Buscar Producto</h2>
+    
+    <form method="GET">
+        <input type="text" name="q" value="{{ query }}" placeholder="Buscar por nombre" />
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if productos %}
+        <ul>
+            {% for producto in productos %}
+                <li>{{ producto.nombre }}</li>
+            {% endfor %}
+        </ul>
+    {% elif query %}
+        <p>No se encontraron productos para "{{ query }}"</p>
+    {% endif %}
+{% endblock %}

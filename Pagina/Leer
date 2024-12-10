@@ -1,0 +1,22 @@
+
+Este proyecto se basa en una pagina de productos.
+
+1. **Instalar dependencias**:
+   - Crear un entorno virtual: `python -m venv venv`
+   - Activar el entorno virtual: `venv\Scripts\activate`
+   - Instalar dependencias: `pip install -r requirements.txt`
+
+2. **Realizar migraciones**:
+   - Ejecutar `python manage.py makemigrations`
+   - Ejecutar `python manage.py migrate`
+
+3. **Ejecutar el servidor**:
+   - Ejecutar `python manage.py runserver`
+
+4. **Probar lo siguiente**:
+   - Página principal: Muestra las funciones.
+   - Agregar datos: Usa los formularios para agregar categorías, productos y clientes.
+   - Buscar producto: Filtra productos por nombre.
+
+
+# me falto el tema de la busqueda con usuarios y el recuadro que me complique, pero funciona todo ok.
